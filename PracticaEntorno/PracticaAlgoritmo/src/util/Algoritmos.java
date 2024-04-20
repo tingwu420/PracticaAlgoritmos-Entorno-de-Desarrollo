@@ -1,6 +1,12 @@
 package util;
 
 public abstract class Algoritmos {
+	/**
+	 * Calcula el número de Fibonacci de un número entero.
+	 * 
+	 * @param numero El número entero del cual calcular el número de Fibonacci.
+	 * @return El número de Fibonacci del número dado.
+	 */
 	public static int fibonacci(int numero) {
         if (numero <= 1) {
             return numero;
@@ -9,7 +15,12 @@ public abstract class Algoritmos {
         }
     }
 	
-	
+	/**
+	 * Calcula el factorial de un número entero.
+	 * 
+	 * @param numero El número entero del cual calcular el factorial.
+	 * @return El factorial del número dado.
+	 */
 	public static int factorial(int numero) {
         if (numero == 0 || numero == 1) {
             return 1;
@@ -18,7 +29,12 @@ public abstract class Algoritmos {
         }
     }
 	
-	
+	/**
+	 * Verifica si un número entero es primo.
+	 * 
+	 * @param numero El número entero a verificar.
+	 * @return true si el número es primo, false de lo contrario.
+	 */
 	public static boolean esPrimo(int numero) {
         if (numero <= 1) {
             return false;
