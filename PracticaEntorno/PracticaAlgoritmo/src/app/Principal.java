@@ -2,7 +2,6 @@ package app;
 
 import util.Algoritmos;
 import java.util.Random;
-
 public class Principal {
 	public static void main(String[] args) {
         // Crear un array de enteros con 5 números aleatorios del 1 al 10

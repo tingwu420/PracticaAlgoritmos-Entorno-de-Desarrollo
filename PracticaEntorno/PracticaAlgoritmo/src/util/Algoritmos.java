@@ -7,11 +7,11 @@ public abstract class Algoritmos {
 	 * @param numero El número entero del cual calcular el número de Fibonacci.
 	 * @return El número de Fibonacci del número dado.
 	 */
-	public static int fibonacci(int numero) {
-        if (numero <= 1) {
-            return numero;
+	public static int fibonacci(int num) {
+        if (num <= 1) {
+            return num;
         } else {
-            return fibonacci(numero - 1) + fibonacci(numero - 2);
+            return fibonacci(num - 1) + fibonacci(num - 2);
         }
     }
 	
@@ -21,11 +21,11 @@ public abstract class Algoritmos {
 	 * @param numero El número entero del cual calcular el factorial.
 	 * @return El factorial del número dado.
 	 */
-	public static int factorial(int numero) {
-        if (numero == 0 || numero == 1) {
+	public static int factorial(int num) {
+        if (num == 0 || num == 1) {
             return 1;
         } else {
-            return numero * factorial(numero - 1);
+            return num * factorial(num - 1);
         }
     }
 	
@@ -35,19 +35,19 @@ public abstract class Algoritmos {
 	 * @param numero El número entero a verificar.
 	 * @return true si el número es primo, false de lo contrario.
 	 */
-	public static boolean esPrimo(int numero) {
-        if (numero <= 1) {
+	public static boolean esPrimo(int num) {
+        if (num <= 1) {
             return false;
         }
-        if (numero <= 3) {
+        if (num <= 3) {
             return true;
         }
-        if (numero % 2 == 0 || numero % 3 == 0) {
+        if (num % 2 == 0 || num % 3 == 0) {
             return false;
         }
         int divisor = 5;
-        while (divisor * divisor <= numero) {
-            if (numero % divisor == 0 || numero % (divisor + 2) == 0) {
+        while (divisor * divisor <= num) {
+            if (num % divisor == 0 || num % (divisor + 2) == 0) {
                 return false;
             }
             divisor += 6;
